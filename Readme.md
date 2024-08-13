@@ -9,11 +9,4 @@ Welcome to this repository! This project serves as a centralized resource for ea
 
 `http://issambeniysa.us.to/{Name_of_the_file}`
 
-### check:
-`
-/tlc
-`
-`/bcat.html
-`
-
 ### Thank you for visiting this repository! Happy learning and testing!
