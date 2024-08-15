@@ -7,6 +7,6 @@ Welcome to this repository! This project serves as a centralized resource for ea
 > While I strive to provide valuable resources, I want to emphasize that I am not responsible for any misuse of the commands or tools provided in this repository. Please ensure that you use this information ethically and responsibly.
 ## Usage:
 
-`http://issambeniysa.us.to/{Name_of_the_file}`
+`http://issambeniysa.site/{Name_of_the_file}`
 
 ### Thank you for visiting this repository! Happy learning and testing!
