@@ -1,223 +1,422 @@
-
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="EN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/favico.png" />
+        <link rel="mask-icon" type="image/x-icon" href="assets/favico.svg" color="#111" />
+        <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'>
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css'>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            window.console = window.console || function(t) {};
+        </script>
+        <title>Beniysa Issam</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/gear.png" />
-    <link rel="mask-icon" type="image/x-icon" href="assets/gear.svg" color="#111" />
+    </head>
+    <body translate="no">
+        <section>
+        <div class="icon-container">
+            <div class="icon-box about" data-modal="about">
+            <i class="fa-regular fa-address-card"></i>
+            </div>
+            <div class="icon-box projects" data-modal="projects">
+            <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="icon-box testimonial" data-modal="testimonial">
+            <i class="fa-solid fa-users-rectangle"></i>
+            </div>
+            <div class="icon-box contact" data-modal="contact">
+            <i class="fa-solid fa-envelope"></i>
+            </div>
+        </div>
+        </section>
 
-  <title>Maintenance page</title>
-  
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  
-<style>
-body {
-    margin: 0;
-    padding: 0;
-}
-* {
-    box-sizing: border-box;
-}
-.maintenance {
-    background-image: url(https://demo.wpbeaveraddons.com/wp-content/uploads/2018/02/main-1.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: scroll;
-    background-size: cover;
-}
+        <div class="popup" id="about">
+        <div class="popup-container">
+            <div class="popup-header">
+            <div class="button-container">
+                <button class="close-btn circle-btn red">
+                <i class="fa-solid fa-xmark"></i>
+                </button>
+                <button class="close-btn circle-btn yellow">
+                <i class="fa-solid fa-window-minimize"></i>
+                </button>
+                <button class="maximize-btn circle-btn green">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </button>
+            </div>
+            </div>
+            <div class="popup-body about-container">
+            <div class="img-frame">
+                <img
+                src="assets/main_pic_1.jpg"
+                alt="my picture" />
+            </div>
+            <div class="hero-content">
+                <h1><a href="https://linktr.ee/issam.beniysa">Issam Beniysa</a></h1>
+                <p>
+                    I am an optimistic, committed and determined person
+                    to succeed in my professional career. My goal is
+                    to acquire and develop new
+                    skills to continuously progress and
+                    achieve excellence in my field. I am
+                    Motivated by constant learning and improvement of
+                    my abilities to contribute effectively to my
+                    working environment.
+                </p>
+            </div>
+            </div>
+        </div>
+        </div>
 
-.maintenance {
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-}
+        <div class="popup" id="projects">
+        <div class="popup-container">
+            <div class="popup-header">
+            <div class="button-container">
+                <button class="close-btn circle-btn red">
+                <i class="fa-solid fa-xmark"></i>
+                </button>
+                <button class="close-btn circle-btn yellow">
+                <i class="fa-solid fa-window-minimize"></i>
+                </button>
+                <button class="maximize-btn circle-btn green">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </button>
+            </div>
+            </div>
 
-.maintenance {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-}
+            <div class="popup-body">
+            <div class="skill-list">
+                <h1>Skills</h1>
+                <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Web App Security</li>
+                <li>OS Security</li>
+                <li>Security Operations</li>
+                <li>Digital Forensics</li>
+                <li>Technical Support</li>
+                <li>OSI ModelOSI Model</li>
+                <li>TCP/IP</li>
+                <li>Network Configuration</li>
+                <li>Network Connectivity</li>
+                <li>Network Protocols</li>
+                <li>VLAN</li>
+                <li>inter-VLAN</li>
+                <li>Spanning Tree</li>
+                <li>WLC</li>
+                <li>switch security</li>
+                <li>routing ipv4</li>
+                <li>routing ipv6</li>
+                <li>IPSec</li>
+                <li>VPN</li>
+                <li>Etherchannel</li>
+                <li>FHRP</li>
+                <li>VoIP</li>
+                <li>Network Troubleshooting</li>
+                <li>OSPF</li>
+                <li>NAT</li>
+                <li>WAN</li>
+                <li>QoS</li>
+                <li>SDN</li>
+                <li>Routing Protocols</li>
+                <li>LAN Switching</li>
+                <li>Security</li>
+                <li>Firewalls</li>
+                <li>Grafana</li>
+                <li>Ubuntu</li>
+                <li>SQL Injection</li>
+                <li>SQL Injection Attacks</li>
+                <li>Zabbix</li>
+                <li>fortigate</li>
+                <li>GNS3</li>
+                <li>PnetLab</li>
+                <li>information privacy</li> 
+                <li>Threat Detection</li>
+                <li>device maintenance</li>
+                <li>Bash</li>
+                <li>Powershell</li>
+                <li>Microsoft Azure</li>
+                <li>oracle cloud</li>
+                <li>DNS</li>
+                <li>DHCP</li>
+                <li>Cloud Computing</li>
+                <li>Security Management</li>
+                <li>Active Directory</li>
+                <li>WordPress</li>
+                <li>Virtualization</li>
+                <li>VMware</li>
+                <li>VMWare ESXi</li>
+                <li>VMware vSphere</li>
+                <li>VirtualBox</li>
+                <li>Proxmox</li>
+                <li>Hyper-V</li>
+                <li>Automation</li>
+                <li>Microsoft Office</li>
+                <li>Technical English</li>
+                <li>Windows Server</li>
+                <li>Troubleshooting</li>
+                <li>Cisco Networking</li>
+                <li>Oracle SQL Developer</li>
+                <li>Network Security</li>
+                <li>GitHub</li>
+                <li>Red Hat Linux</li>
+                <li>Linux Administration</li>
+                <li>Network Administration</li>
+                <li>Windows Administration</li>
+                <li>Packet Tracer</li>
+                <li>MySQL</li>
+                <li>SQL Injection Attacks</li>
+                <li>Maintenance & Repair</li>
+                <li>SQL</li>
+                <li>Oracle Database</li>
+                <li>Shell Scripting</li>
+                <li>Linux</li>
+                <li>C</li>
+                <li>Networking</li>
+                <li>Computer Networking</li>
+                <li>Problem Solving</li>
+                <li>Python </li>
+                <li>Git</li>
+                </ul>
+            </div>
 
-.maintenance_contain {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;  
-    padding: 15px;  
-}
-.maintenance_contain img {
-    width: auto;
-    max-width: 100%;
-}
-.pp-infobox-title-prefix {
-    font-weight: 500;
-    font-size: 20px;
-    color: #000000;
-    margin-top: 30px;
-    text-align: center;
-}
+            <div class="project-container">
+                <h1>Projects</h1>
+                <div class="all-projects">
+                <div class="project-box">
+                    <img
+                    src="assets/Zabbix.png"
+                    alt="Zabbix" />
+                    <div class="overlay">
+                    <h3>Virtualized Zabbix Project</h3>
+                    <a href="https://www.linkedin.com/posts/issam-beniysa-1012971aa_servers-networking-server-activity-7198071140139814913-k6C8?utm_source=share&utm_medium=member_desktop" class="more-btn" target="_blank">
+                        <span>Learn More</span>
+                    </a>
+                    </div>
+                </div>
 
-.pp-infobox-title-prefix {
-    font-family: sans-serif;
-}
+                <div class="project-box">
+                    <img
+                    src="assets/SDN.png"
+                    alt="SDN" />
+                    <div class="overlay">
+                    <h3>Virtualization Of SDN</h3>
+                    <a href="https://www.linkedin.com/posts/issam-beniysa-1012971aa_opendaylight-sdnvirtualisation-mininetnetworking-activity-7205672801926529024-p8Ju?utm_source=share&utm_medium=member_desktop" class="more-btn" target="_blank">
+                        <span>Learn More</span>
+                    </a>
 
-.pp-infobox-title {
-    color: #000000;
-    font-family: sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    display: block;
-    word-break: break-word;  
-}
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
 
-.pp-infobox-description {
-    color: #000000;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: center;
-}
+        <div class="popup" id="testimonial">
+        <div class="popup-container">
+            <div class="popup-header">
+            <div class="button-container">
+                <button class="close-btn circle-btn red">
+                <i class="fa-solid fa-xmark"></i>
+                </button>
+                <button class="close-btn circle-btn yellow">
+                <i class="fa-solid fa-window-minimize"></i>
+                </button>
+                <button class="maximize-btn circle-btn green">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </button>
+            </div>
+            </div>
+            <div class="popup-body testimonial-container">
+            <h1>Certificates</h1>
 
-.pp-infobox-description p {
-    margin: 0;
-}
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/cert/THM-6WPY5USSUI.png" alt="Certificate 1">
+                    <a href="assets/cert/THM-6WPY5USSUI.png" class="slide-button" target="_blank">View Certificate</a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/cert/THM-WJWKSDRXAC.png" alt="Certificate 1">
+                    <a href="assets/cert/THM-WJWKSDRXAC.png" class="slide-button" target="_blank">View Certificate</a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/cert/sql_cert.png" alt="Certificate 2">
+                    <a href="assets/cert/sql_cert.png" class="slide-button" target="_blank">View Certificate</a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/cert/Introduction_to_Cybersecurity_Badge20240226-29-o9oupt-1.png" alt="Certificate 3" >
+                    <a href="assets/cert/Introduction_to_Cybersecurity_Badge20240226-29-o9oupt-1.png" class="slide-button" target="_blank">View Certificate</a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/cert/Computer_Hardware_Basics_Badge20240226-29-hdqb08-1.png" alt="Certificate 3" >
+                    <a href="assets/cert/Computer_Hardware_Basics_Badge20240226-29-hdqb08-1.png" class="slide-button" target="_blank">View Certificate</a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/cert/UC-a4810231-4cb0-4298-9536-b011bd55ff69.jpg" alt="Certificate 3" >
+                    <a href="link here" class="slide-button" target="_blank">View Certificate</a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/cert/issambeniyssa-PYTHON-ID1A-2023-certificate_page-0001.jpg" alt="Certificate 3" >
+                    <a href="assets/cert/UC-a4810231-4cb0-4298-9536-b011bd55ff69.jpg" class="slide-button" target="_blank">View Certificate</a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/cert/issambeniysa-CCNAv7 Introduct-certificate_page-0001.jpg" alt="Certificate 3" >
+                    <a href="assets/cert/issambeniysa-CCNAv7 Introduct-certificate_page-0001.jpg" class="slide-button" target="_blank">View Certificate</a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/cert/issambeniysa-ISTAHAYNAHDA-ID2-certificate_page-0001.jpg" alt="Certificate 3" >
+                    <a href="assets/cert/issambeniysa-ISTAHAYNAHDA-ID2-certificate_page-0001.jpg" class="slide-button" target="_blank">View Certificate</a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/cert/issambeniyssa-CCNAv7 Enterpris-certificate_page-0001.jpg" alt="Certificate 3" >
+                    <a href="assets/cert/issambeniyssa-CCNAv7 Enterpris-certificate_page-0001.jpg" class="slide-button" target="_blank">View Certificate</a>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        
+            </div>
 
-.title-text.pp-primary-title {
-    color: #000000;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    font-family: sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.4;
-    margin-top: 50px;
-    margin-bottom: 0px;
-}
+        <div class="popup" id="contact">
+        <div class="popup-container">
+            <div class="popup-header">
+            <div class="button-container">
+                <button class="close-btn circle-btn red">
+                <i class="fa-solid fa-xmark"></i>
+                </button>
+                <button class="close-btn circle-btn yellow">
+                <i class="fa-solid fa-window-minimize"></i>
+                </button>
+                <button class="maximize-btn circle-btn green">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </button>
+            </div>
+            </div>
+            <div class="popup-body contact-container">
+            <h1>Contact</h1>
+            <p>Hi there, you can contact with me via email.</p>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="80af7cd3-34c6-405e-8446-92d88bbcd98f">
+                <label for="name">Name</label>
+                <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name.." 
+                required
+                />
 
-.pp-social-icon {
-    margin-left: 10px;
-    margin-right: 10px;
-    display: inline-block;
-    line-height: 0;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    text-align: center;
-}
+                <label for="email">Email</label>
+                <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Your mail.." 
+                required
+                />
 
-.pp-social-icon a {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-}
+                <label for="message">message</label>
+                <textarea
+                id="message"
+                name="message"
+                placeholder="Write something.."
+                style="height: 200px"
+                required
+                ></textarea>
+                <input type="hidden" name="subject" value='A New Message Sent From Portfolio Contact'>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <input type="hidden" name="redirect" value="#">
+                <button class="submit-btn more-btn" type="submit">
+                <span>Submit <i class="fa-solid fa-paper-plane"></i></span>
+                </button>
+                
+            </form>
+            </div>
+        </div>
+        </div>
+        <script src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'></script>
+        <script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'></script>
+        <script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'></script>
+        <script id="rendered-js">
+            const iconBoxes = document.querySelectorAll(".icon-box");
+            const iconBoxContainers = document.querySelectorAll(".icon-container");
+            const closeBtns = document.querySelectorAll(".close-btn");
+            const maximizeBtns = document.querySelectorAll(".maximize-btn");
+            const body = document.querySelector("body");
 
-.pp-social-icon a i {
-    border-radius: 100px;
-    font-size: 20px;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    text-align: center;
-}
+            iconBoxes.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                let modal = btn.getAttribute("data-modal");
+                document.getElementById(modal).style.display = "block";
+                body.classList.add("prevent-background-scroll");
+            });
+            });
 
-.pp-social-icon:nth-child(1) a i {
-    color: #4b76bd;
-}
-.pp-social-icon:nth-child(1) a i {
-    border: 2px solid #4b76bd;
-}
-.pp-social-icon:nth-child(2) a i {
-    color: #00c6ff;
-}
-.pp-social-icon:nth-child(2) a i {
-    border: 2px solid #00c6ff;
-}
-.pp-social-icon:nth-child(3) a i {
-    color: #fb5245;
-}
-.pp-social-icon:nth-child(3) a i {
-    border: 2px solid #fb5245;
-}
-.pp-social-icon:nth-child(4) a i {
-    color: #158acb;
-}
-.pp-social-icon:nth-child(4) a i {
-    border: 2px solid #158acb;
-}
+            closeBtns.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                let modal = btn.closest(".popup");
+                modal.style.display = "none";
+                body.classList.remove("prevent-background-scroll");
+                iconBoxContainers.forEach((container) => {
+                container.style.display = "flex";
+                });
+            });
+            });
 
-.pp-social-icons {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-}
-</style>
+            document.addEventListener("click", (e) => {
+            if (e.target.classList.contains("popup")) {
+                e.target.style.display = "none";
+                body.classList.remove("prevent-background-scroll");
+            }
+            });
 
-  <script>
-  window.console = window.console || function(t) {};
-</script>
+            maximizeBtns.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                let modal = btn.closest(".popup");
+                let container = modal.querySelector(".popup-container");
+                let body = modal.querySelector(".popup-body");
 
-  
-  
-</head>
+                if (modal.classList.contains("maximized")) {
+                container.style.width = "min(900px, 90%)";
+                container.style.top = "45%";
+                body.style.height = "70vh";
+                } else {
+                container.style.width = "100%";
+                container.style.top = "50%";
+                body.style.height = "90vh";
+                }
 
-<body translate="no">
-  <div class="maintenance">
-  <div class="maintenance_contain">
-    <img src="https://demo.wpbeaveraddons.com/wp-content/uploads/2018/02/main-vector.png" alt="maintenance">
-    <span class="pp-infobox-title-prefix">WE ARE COMING SOON</span>
-    <div class="pp-infobox-title-wrapper">
-		  <h3 class="pp-infobox-title">The website under maintenance!</h3>
-	  </div> 
-  <div class="pp-infobox-description">
-		<p>We sincerely apologize for the inconvenience. Our site is currently under scheduled maintenance and upgrades, <br>
-            but will return shortly. Thank you for your patience.<br>will resolve this issue in 24/7 hours</p>			
-        </div>    
-    <span class="title-text pp-primary-title">We are social</span>
-    <div class="pp-social-icons pp-social-icons-center pp-responsive-center">
-	<span class="pp-social-icon">
-		<link itemprop="url" href="#">
-		<a itemprop="sameAs" href="https://github.com/3issam-hub" target="_blank" title="github" aria-label="github" role="button">
-			<i class="fa fa-github"></i>
-		</a>
-	</span>
-	<span class="pp-social-icon">
-		<link itemprop="url" href="#">
-		<a itemprop="sameAs" href="https://twitter.com/BeniysaIssam" target="_blank" title="Twitter" aria-label="Twitter" role="button">
-			<i class="fa fa-twitter"></i>
-		</a>
-	</span>
-	<span class="pp-social-icon">
-		<link itemprop="url" href="#">
-		<a itemprop="sameAs" href="https://issambeniysa.site/" target="_blank" title="website" aria-label="website" role="button">
-			<i class="fa fa-home"></i>
-		</a>
-    <span class="pp-social-icon">
-        <link itemprop="url" href="#">
-        <a itemprop="sameAs" href="https://www.instagram.com/beniysa_issam/" target="_blank" title="instagram" aria-label="instagram" role="button">
-            <i class="fa fa-instagram"></i>
-        </a>
-	</span>
-	<span class="pp-social-icon">
-		<a itemprop="sameAs" href="https://www.linkedin.com/in/issam-beniysa-1012971aa/" target="_blank" title="LinkedIn" aria-label="LinkedIn" role="button">
-			<i class="fa fa-linkedin"></i>
-		</a>
-	</span>
-</div>
-  </div>
-</div>
-   
-</body>
+                modal.classList.toggle("maximized");
+                body.classList.toggle("prevent-scroll");
+            });
+            });
 
+            var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            initialSlide: 1,
+            speed: 500,
+            slidesPerView: 'auto',
+            PreventClicks: true,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+            });
+        </script>
+    </body>
 </html>
