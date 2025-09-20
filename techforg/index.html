@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechForge - Where Design Meets Technology</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TechForge</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Where Design Meets Technology</h1>
+                    <p>Empowering businesses with cutting-edge digital solutions, creative design, and robust IT infrastructure.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="scrollToSection('contact')">Get Started</button>
+                        <button class="btn-secondary" onclick="scrollToSection('services')">Details</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="floating-card">
+                        <i class="fas fa-palette"></i>
+                        <h3>Creative Design</h3>
+                    </div>
+                    <div class="floating-card">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>IT & Networking</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg">
+            <div class="gradient-orb"></div>
+            <div class="gradient-orb"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive solutions for your digital transformation</p>
+            </div>
+            <div class="services-grid">
+                <!-- Creative & Design -->
+                <div class="service-card" data-service="creative">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=500&h=300&fit=crop" alt="Creative Design">
+                        <div class="service-overlay">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Creative & Design</h3>
+                        <p>UX/UI design, brand identity, social media content, and visual communication solutions.</p>
+                        <ul class="service-features">
+                            <li>Logo & Brand Identity</li>
+                            <li>Social Media Posts</li>
+                            <li>App Graphics & Mockups</li>
+                            <li>Business Cards & Flyers</li>
+                            <li>Presentation Design</li>
+                        </ul>
+                        <button class="btn-service" onclick="openServiceModal('creative')">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- IT & Networking -->
+                <div class="service-card" data-service="it">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&h=300&fit=crop" alt="IT & Networking">
+                        <div class="service-overlay">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>IT & Networking</h3>
+                        <p>Complete IT infrastructure setup, networking solutions, and system administration.</p>
+                        <ul class="service-features">
+                            <li>Network Installation</li>
+                            <li>Server Setup & Management</li>
+                            <li>VoIP Systems</li>
+                            <li>Windows/Linux Systems</li>
+                            <li>IT Troubleshooting</li>
+                        </ul>
+                        <button class="btn-service" onclick="openServiceModal('it')">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="service-card" data-service="web">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop" alt="Web Development">
+                        <div class="service-overlay">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Web Development</h3>
+                        <p>Modern, responsive websites and e-commerce solutions built with cutting-edge technology.</p>
+                        <ul class="service-features">
+                            <li>WordPress Development</li>
+                            <li>Shopify E-commerce</li>
+                            <li>Custom Web Applications</li>
+                            <li>Landing Pages</li>
+                            <li>Portfolio Websites</li>
+                        </ul>
+                        <button class="btn-service" onclick="openServiceModal('web')">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Portfolio</h2>
+                <p>Showcasing our best work across all services</p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="creative">Creative & Design</button>
+                <button class="filter-btn" data-filter="it">IT & Networking</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop" alt="E-commerce Website">
+                    <div class="portfolio-overlay">
+                        <h3>E-commerce Platform</h3>
+                        <p>Modern online store with advanced features</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="creative">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&h=300&fit=crop" alt="Brand Identity">
+                    <div class="portfolio-overlay">
+                        <h3>Brand Identity Design</h3>
+                        <p>Complete brand makeover for tech startup</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="it">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop" alt="Network Setup">
+                    <div class="portfolio-overlay">
+                        <h3>Corporate Network</h3>
+                        <p>Complete IT infrastructure for 500+ employees</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Portfolio Website">
+                    <div class="portfolio-overlay">
+                        <h3>Portfolio Website</h3>
+                        <p>Creative portfolio for design agency</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="creative">
+                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop" alt="Social Media Design">
+                    <div class="portfolio-overlay">
+                        <h3>Social Media Campaign</h3>
+                        <p>Complete social media visual identity</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Web Application">
+                    <div class="portfolio-overlay">
+                        <h3>Custom Web App</h3>
+                        <p>Project management dashboard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About TechForge</h2>
+                    <p>We are a leading IT company dedicated to transforming businesses through innovative technology solutions. Our team of experts combines creativity with technical expertise to deliver exceptional results.</p>
+                    <p>With years of experience in the industry, we have successfully completed numerous projects and built lasting relationships with our clients. We pride ourselves on our commitment to quality, innovation, and customer satisfaction.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Service Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to start your next project? Let's talk!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
+                        <input type="hidden" name="subject" value="New Contact Form Submission">
+                        <input type="hidden" name="from_name" value="TechForge Website">
+                        
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" id="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>support@techforge.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>123 Tech Street, Digital City, DC 12345</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>TechForge</h3>
+                    <p>Where Design Meets Technology</p>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechForge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
